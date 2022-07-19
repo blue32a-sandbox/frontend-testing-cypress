@@ -10,4 +10,10 @@ describe('My First Test', () => {
       .type('fake@email.com')
       .should('have.value', 'fake@email.com')
   })
+
+  it('Local site', () => {
+    cy.visit(Cypress.env('SITE_URL'));
+
+    cy.contains('Dummy Site');
+  })
 })
