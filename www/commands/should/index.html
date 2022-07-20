@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>should command</title>
+</head>
+<body>
+    <header id="header">
+        <a href="/users">Users</a>
+    </header>
+
+    <h1>should</h1>
+
+    <form class="form-horizontal">
+        <input type="checkbox" id="check-disabled" vlaue="1" disabled><label for="check-disabled">チェックボックス</label>
+
+        <select>
+            <option value="1" selected>first</option>
+            <option value="2">second</option>
+            <option value="3">third</option>
+        </select>
+
+        <input type="text" value="Hoge">
+
+        <button type="button" id="new-user">new user</button>
+
+        <button id="btn-focuses-input" type="button" onclick="focusMethod()">Focus</button>
+        <input type="text" id="input-receives-focus">
+        <script>
+        (function(){
+            focusMethod = function getFocus() {
+                document.getElementById("input-receives-focus").focus();
+            }
+        })();
+        </script>
+    </form>
+
+    <div>
+        <p class="text-primary">Hello World</p>
+        <p class="text-danger">You have an error</p>
+        <p class="text-default">Try again later</p>
+    </div>
+
+    <div class="docs-header">
+        <div class="main-abc123 heading-xyz987">Introduction</div>
+    </div>
+
+    <ul class="connectors-list">
+        <li>Walk the dog</li>
+        <li>Feed the cat</li>
+        <li>Write JavaScript</li>
+    </ul>
+
+    <div class="company-details">
+        <div class="title">Acme Developers</div>
+        <div class="identifier">ACMEDEVELOPERS</div>
+    </div>
+
+    <button type="button" id="wait-button" class="inactive" onclick="changeClass()">Wait</button>
+    <script>
+    (function(){
+        changeClass = function getFocus() {
+            const button = document.getElementById("wait-button");
+
+            setTimeout(() => {
+                button.classList.remove('inactive');
+                button.classList.add('active');
+            }, 1000);
+        }
+    })();
+    </script>
+</body>
+</html>
