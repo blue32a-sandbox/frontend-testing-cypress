@@ -1,6 +1,6 @@
 describe('shouldコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/should');
+    cy.visit('/commands/should');
   });
 
   describe('Chainers', () => {

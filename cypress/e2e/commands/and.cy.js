@@ -1,6 +1,6 @@
 describe('andコマンド', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/and');
+    cy.visit('/commands/and');
   });
 
   describe('Chainers', () => {

@@ -1,6 +1,6 @@
 describe('findコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/find');
+    cy.visit('/commands/find');
   });
 
   describe('Selector', () => {

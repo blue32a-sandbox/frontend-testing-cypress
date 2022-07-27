@@ -1,6 +1,6 @@
 describe('getCookieコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/getcookie');
+    cy.visit('/commands/getcookie');
   });
 
   describe('Cookieを取得する', () => {

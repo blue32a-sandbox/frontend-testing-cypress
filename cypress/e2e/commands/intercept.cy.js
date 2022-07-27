@@ -1,6 +1,6 @@
 describe('interceptコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/intercept');
+    cy.visit('/commands/intercept');
   });
 
   describe('Waiting on a request', () => {

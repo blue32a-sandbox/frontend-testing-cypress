@@ -1,6 +1,6 @@
 describe('typeコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/type');
+    cy.visit('/commands/type');
   });
 
   describe('Input', () => {

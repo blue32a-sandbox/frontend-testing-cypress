@@ -1,6 +1,6 @@
 describe('urlコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/url');
+    cy.visit('/commands/url');
   });
 
   describe('No Args', () => {

@@ -1,6 +1,6 @@
 describe('getコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/get');
+    cy.visit('/commands/get');
     cy.get('button[type=submit]').as('submitBtn');
     cy.fixture('users.json').as('users');
   });

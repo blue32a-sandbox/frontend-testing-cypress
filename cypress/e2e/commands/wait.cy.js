@@ -1,6 +1,6 @@
 describe('waitコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/wait');
+    cy.visit('/commands/wait');
   });
 
   describe('Time', () => {

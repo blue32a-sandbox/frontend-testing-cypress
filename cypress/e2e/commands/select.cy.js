@@ -1,6 +1,6 @@
 describe('selectコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/select');
+    cy.visit('/commands/select');
   });
 
   describe('Text Content', () => {

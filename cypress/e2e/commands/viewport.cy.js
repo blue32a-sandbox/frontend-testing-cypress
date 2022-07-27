@@ -1,5 +1,5 @@
 describe('viewportコマンドのテスト', () => {
-  const URL = Cypress.env('SITE_URL') + '/commands/viewport';
+  const URL = '/commands/viewport';
 
   describe('iphone-x', () => {
     beforeEach(() => {

@@ -1,6 +1,6 @@
 describe('clickコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/click');
+    cy.visit('/commands/click');
   });
 
   describe('No Args', () => {

@@ -1,5 +1,5 @@
 describe('containsコマンドのテスト', () => {
-  const URL = Cypress.env('SITE_URL') + '/commands/contains';
+  const URL = '/commands/contains';
 
   describe('コンテンツ', () => {
     it('テキストを含む最初の要素を検索', () => {

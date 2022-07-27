@@ -1,6 +1,6 @@
 describe('thenコマンドのテスト', () => {
   beforeEach(() => {
-    cy.visit(Cypress.env('SITE_URL') + '/commands/then');
+    cy.visit('/commands/then');
   });
 
   describe('DOM element', () => {
