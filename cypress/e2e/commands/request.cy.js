@@ -1,4 +1,4 @@
-describe('interceptコマンドのテスト', () => {
+describe('requestコマンドのテスト', () => {
   beforeEach(() => {
     cy.visit('/commands/request');
   });
