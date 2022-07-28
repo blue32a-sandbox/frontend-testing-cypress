@@ -12,7 +12,8 @@ describe('My First Test', () => {
   })
 
   it('Local site', () => {
-    cy.visit(Cypress.env('SITE_URL'));
+    // See 'baseUrl' in cypress.config.js
+    cy.visit('/');
 
     cy.contains('Dummy Site');
   })
